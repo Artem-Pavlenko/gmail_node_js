@@ -9,15 +9,17 @@ app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
 app.use(bodyParser.json())
 
-const port = 3000
+let port = process.env.PORT || 3010
+let smtpLogin = process.env.SMTP_LOGIN || 'artemdevakk@gmail.com'
+let smtpPass = process.env.SMTP_PASS
 
 let transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
     // port: 465,
     // secure: true, // use SSL
     auth: {
-        user: 'artemdevakk@gmail.com',
-        pass: '19942810'
+        user: smtpLogin,
+        pass: smtpPass
     }
 })
 
