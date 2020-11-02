@@ -1,8 +1,15 @@
 const express = require('express')
-const app = express()
-const port = 3010
-
 const nodemailer = require("nodemailer");
+const cors = require('cors')
+const bodyParser = require('body-parser')
+const app = express()
+app.use(cors())
+// parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: false }))
+// parse application/json
+app.use(bodyParser.json())
+
+const port = 3000
 
 let transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
@@ -18,23 +25,28 @@ app.get('/', (req, res) => {
     res.send('Hello World!')
 })
 
-app.get('/sendMessage', async (req, res) => {
+app.post('/sendMessage', async (req, res) => {
+    let {name, email, text} = req.body
     try {
         let info = await transporter.sendMail({
-            from: 'Portfolio', // sender address
+            from: `Portfolio, ${name}`, // sender address
             to: "artemdevakk@gmail.com", // list of receivers
-            subject: "Hello ✔, testing gmail ", // Subject line
-            //text: "Hello world?", // plain text body
-            html: "<b>Hello world?</b>", // html body
+            subject: `Message from ${name} `, // Subject line
+            // text: `Message from ${email}. ${text}`, // plain text body
+            html: `<b>from: ${email}</b>
+                    <b>Message from your portfolio</b>
+                    <div>
+                        contact name: ${name} , 
+                    </div>
+                    <div>
+                        ${text}
+                    </div>`
         })
     } catch (e) {
         console.log(e)
     }
 
-
-
-
-    res.send('send message')
+    res.send(req.body)
 })
 
 app.listen(port, () => {
