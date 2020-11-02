@@ -17,9 +17,9 @@ let transporter = nodemailer.createTransport({
     // secure: true, // use SSL
     auth: {
         user: 'artemdevakk@gmail.com',
-        pass: '19942810',
+        pass: '19942810'
     }
-});
+})
 
 app.get('/', (req, res) => {
     res.send('Hello World!')
