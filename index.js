@@ -35,7 +35,7 @@ app.post('/sendMessage', async (req, res) => {
             to: "artemdevakk@gmail.com", // list of receivers
             subject: `Message from ${name} `, // Subject line
             // text: `Message from ${email}. ${text}`, // plain text body
-            html: `<b>from: ${email}</b>
+            html: `<span>from:</span><b>${email}</b>
                     <b>Message from your portfolio</b>
                     <div>
                         contact name: ${name} , 
