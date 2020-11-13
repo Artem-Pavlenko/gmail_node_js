@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
 let port = process.env.PORT || 3010
-let smtpLogin = process.env.SMTP_LOGIN || 'artemdevakk@gmail.com'
+let smtpLogin = process.env.SMTP_LOGIN || 'portfolio19942810@gmail.com'
 let smtpPass = process.env.SMTP_PASS
 
 let transporter = nodemailer.createTransport({
@@ -32,7 +32,7 @@ app.post('/sendMessage', async (req, res) => {
     try {
         let info = await transporter.sendMail({
             from: `Portfolio, ${name}`, // sender address
-            to: "artemdevakk@gmail.com , rozen19942810@gmail.com", // list of receivers
+            to: "portfolio19942810@gmail.com", // list of receivers
             subject: `Message from ${name} `, // Subject line
             // text: `Message from ${email}. ${text}`, // plain text body
             html: `<span>from:</span><b>${email}</b>
