@@ -20,7 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9eac2d29-6504-4d9f-b450-3e1ee40a8324" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +60,9 @@
       <workItem from="1604308653746" duration="4762000" />
       <workItem from="1604313475305" duration="2085000" />
       <workItem from="1604315943221" duration="5481000" />
-      <workItem from="1604324990876" duration="310000" />
+      <workItem from="1604324990876" duration="819000" />
+      <workItem from="1605281809776" duration="125000" />
+      <workItem from="1605282697546" duration="256000" />
     </task>
     <task id="LOCAL-00001" summary="upg">
       <created>1604322206955</created>
@@ -83,7 +85,21 @@
       <option name="project" value="LOCAL" />
       <updated>1604325039577</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added env variables">
+      <created>1604325560118</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1604325560118</updated>
+    </task>
+    <task id="LOCAL-00005" summary="upd">
+      <created>1605282944090</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1605282944090</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -99,12 +115,14 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="upg" />
-    <MESSAGE value="upd" />
     <MESSAGE value="fix for heroku" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix for heroku" />
+    <MESSAGE value="added env variables" />
+    <MESSAGE value="upd" />
+    <option name="LAST_COMMIT_MESSAGE" value="upd" />
   </component>
   <component name="WindowStateProjectService">
     <state x="637" y="310" key="Github.ShareDialog" timestamp="1604316600587">
@@ -115,9 +133,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="593" y="109" key="Github.UntrackedFilesDialog/0.0.1536.824/-1920.-421.1920.1040@0.0.1536.824" timestamp="1604316626415" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1604325041887">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1605282946657">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.-421.1920.1040@0.0.1536.824" timestamp="1604325041887" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.-421.1920.1040@0.0.1536.824" timestamp="1605282946657" />
   </component>
 </project>

@@ -47,6 +47,11 @@ app.post('/sendMessage', async (req, res) => {
     } catch (e) {
         console.log(e)
     }
+    let response = {
+        resultCode: 0,
+        message: {...req.body}
+    }
+
 
     res.send(req.body)
 })
