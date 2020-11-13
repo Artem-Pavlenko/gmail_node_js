@@ -53,7 +53,7 @@ app.post('/sendMessage', async (req, res) => {
     }
 
 
-    res.send(req.body)
+    res.send(response)
 })
 
 app.listen(port, () => {
